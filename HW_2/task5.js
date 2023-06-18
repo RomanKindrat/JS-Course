@@ -5,7 +5,7 @@ if(time == 23 || time <= 5)
 else if(time > 5 && time <= 11)
     alert("Good morning")
 else if(time > 11 && time <= 17)
-    alert("Good day")
+    alert("Good afternoon")
 else if(time > 17 && time < 23)
     alert("Good evening")
     
@@ -18,7 +18,7 @@ switch (time) {
         console.log("Good morning");
         break;
     case 12: case 13: case 14: case 15: case 16: case 17:
-        console.log("Good day");
+        console.log("Good afternoon");
         break;
     case 18: case 19: case 20: case 21: case 22:
         console.log("Good evening");
