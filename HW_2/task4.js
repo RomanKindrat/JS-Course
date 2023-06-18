@@ -1,7 +1,7 @@
 const a = Number(prompt("a = ..."));
 const b = Number(prompt("b = ..."));
 const c = Number(prompt("c = ..."));
-if(isNaN(a) || isNaN(b) || isNaN(c))
+if(isNaN(a) || isNaN(b) || isNaN(c) || a >= (b + c) || b >= (a + c) || c >= (a + b))
     alert("Incorrect data");
 else
 {
@@ -12,7 +12,7 @@ else
         console.log("The triangle is right-angled");
     else
         console.log("The triangle is not right-angled");
-    console.log("S = ", S.toPrecision(4));
+    console.log("S = ", S.toFixed(3));
 }    
 
 
