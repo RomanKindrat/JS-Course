@@ -1,5 +1,7 @@
 let newMain = document.createElement('main');
-newMain.classList.add("mainClass_check_item");
+newMain.classList.add("mainClass");
+newMain.classList.add("check");
+newMain.classList.add("item");
 let newDiv = document.createElement('div');
 newDiv.classList.add("myDiv");
 let newP = document.createElement('p');
