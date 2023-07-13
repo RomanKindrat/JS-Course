@@ -5,7 +5,7 @@ let displayText = document.querySelector("p");
 let citiesByCountry = {
     "ger": ["Berlin", "Munich", "Hamburg"],
     "usa": ["New York", "Los Angeles", "Chicago"],
-    "ukr": ["Kyiv", "Lviv", "Odesa"]
+    "ukr": ["Kyiv", "Lviv", "Kharkiv"]
 };
 
 function populateCities() {
@@ -24,6 +24,12 @@ function populateCities() {
     displayText.innerHTML = countrySelect.options[countrySelect.selectedIndex].text + ", " + citySelect.options[citySelect.selectedIndex].text;
 }
 
+function getNewCity()
+{
+    displayText.innerHTML = countrySelect.options[countrySelect.selectedIndex].text + ", " + citySelect.options[citySelect.selectedIndex].text;
+}
+
 countrySelect.addEventListener("change", populateCities);
+citySelect.addEventListener("change", getNewCity);
 
 populateCities();
