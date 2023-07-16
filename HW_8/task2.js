@@ -1,6 +1,6 @@
 function checkEmail(email)
 {
-    const pattern = /^\w{3,}@[a-z]{3,}\.[a-z]{2,}$/;
+    const pattern = /^\w{3,}@[a-z]+\.[a-z]{2,}$/;
 
     if(pattern.test(email))
         return true;
